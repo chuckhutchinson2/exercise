@@ -1,5 +1,5 @@
 <div class="header">
   <span *ngFor="let anchor of headerAnchors">
-		 <a href="{{anchor.link}}" target="_BLANK">{{anchor.text}}</a> 
+		 <a href="{{anchor.link}}" target="{{ getTarget(anchor) }}">{{anchor.text}}</a> 
   </span>
 </div>

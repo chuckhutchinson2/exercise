@@ -16,4 +16,15 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  getTarget(anchor: Anchor) {
+
+    console.log(anchor.text + " " + anchor.target);
+    
+    if (anchor.target) {
+      return anchor.target;
+    }
+    
+     return "_blank";
+  }
+
 }
